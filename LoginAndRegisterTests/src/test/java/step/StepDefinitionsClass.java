@@ -31,12 +31,6 @@ public class StepDefinitionsClass {
         login = new Login(driver);
         Assert.assertEquals(true, login.checkLogoPresent());
     }
-
-    //    @When("User enter username and password")
-//    public void user_enter_username_and_password() {
-//        login.setUsername(BaseClass.validUsername);
-//        login.setPassword(BaseClass.validPassword);
-//    }
     @When("User enter username and password")
     public void user_enter_username_and_password() {
         login.setUsername(BaseClass.validUsername);
